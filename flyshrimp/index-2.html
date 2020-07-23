@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兼容IE8的响应式网格瀑布流布局jQuery插件|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+
+    <!-- Fonts URL -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700%7CPlayfair+Display:400,500,600,700,800,900%7CWork+Sans:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/hover-min.css">
+    <link rel="stylesheet" href="assets/css/muzex-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/default.css">
+    <style type="text/css">
+        .dropdown>a{
+            color: white;
+        }
+        #gallery-wrapper {
+            position: relative;
+            max-width: 75%;
+            width: 75%;
+            margin:50px auto;
+        }
+        img.thumb {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+        .white-panel {
+            position: absolute;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+            padding: 10px;
+        }
+        .white-panel h1 {
+            font-size: 1em;
+        }
+        .white-panel h1 a {
+            color: #A92733;
+        }
+        .white-panel:hover {
+            box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+            margin-top: -5px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        p{
+            color: gray;
+        }
+    </style>
+    <!--[if IE]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="main-nav-one stricky">
+    <div class="container">
+        <div class="inner-container">
+            <div class="logo-box">
+                <a href="index.html">
+                    <img src="assets/images/logo-1-1.jpeg" alt="" width="170">
+                </a>
+                <a href="#" class="side-menu__toggler"><i class="muzex-icon-menu"></i></a>
+            </div><!-- /.logo-box -->
+            <div class="main-nav__main-navigation">
+                <ul class="main-nav__navigation-box">
+                    <li class="dropdown">
+                        <a href="index.html">关于肖战</a>
+                        <ul>
+                            <li><a href="index.html">个人经历</a></li>
+                            <li><a href="index-2.html">冷热知识</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="bjianji.html">b站剪辑</a>
+                        <ul>
+                            <li><a href="bjianji.html">优秀剪辑</a></li>
+                            <li><a href="bup.html">优秀up主</a></li>
+                            <li><a href="donate.html">留着先</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="movies.html">看过的书影音</a>
+                        <ul>
+                            <li><a href="books.html">书籍</a></li>
+                            <li><a href="movies.html">电影</a></li>
+                            <li><a href="music.html">音乐</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">角色</a>
+                        <ul style="height:300px;width:250px;overflow-y:scroll;">
+                            <li><a href="fangtianze.html">《超星星学园》-方天泽</a></li>
+                            <li><a href="fangtianze.html">《斗破苍穹》-林修崖</a></li>
+                            <li><a href="fangtianze.html">《狼殿下》-疾冲</a></li>
+                            <li><a href="fangtianze.html">《捉妖记2》-永宁村小妖</a></li>
+                            <li><a href="fangtianze.html">《哦！我的皇帝陛下》-北堂墨染</a></li>
+                            <li><a href="fangtianze.html">《陈情令》-魏无羡</a></li>
+                            <li><a href="fangtianze.html">《庆余年》-言冰云</a></li>
+                            <li><a href="fangtianze.html">《斗罗大陆》-唐三</a></li>
+                            <li><a href="fangtianze.html">《诛仙I》-张小凡</a></li>
+                            <li><a href="fangtianze.html">《余生请多指教》-顾魏</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="yinyuezuopin.html">其他</a>
+                        <ul>
+                            <li><a href="yinyuezuopin.html">综艺节目</a></li>
+                            <li><a href="stage.html">舞台</a></li>
+                            <li><a href="words.html">语录</a></li>
+
+                        </ul>
+                    </li>
+                </ul><!-- /.main-nav__navigation-box -->
+            </div><!-- /.main-nav__main-navigation -->
+            <div class="main-nav__right">
+                <a class="sidemenu-icon side-content__toggler" href="#"><i class="muzex-icon-menu"></i></a>
+            </div><!-- /.main-nav__right -->
+        </div><!-- /.inner-container -->
+    </div><!-- /.container -->
+</nav><!-- /.main-nav-one -->
+<section class="htmleaf-container">
+    <header class="htmleaf-header">
+        <h1>关于战战的冷热知识！ <span>看看你还有那些不知道哇</span></h1>
+    </header>
+</section>
+<section id="gallery-wrapper">
+    <article class="white-panel">
+        <img src="assets/images/1.jpg" class="thumb">
+        <h1><a href="#">Title 1</a></h1>
+        <p>Description 1附属设施所所所所所所所所所所所所付</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/2.jpg" class="thumb">
+        <h1><a href="#">Title 2</a></h1>
+        <p>Description 2</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/3.jpg" class="thumb">
+        <h1><a href="#">Title 3</a></h1>
+        <p>Description 3</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/4.jpg" class="thumb">
+        <h1><a href="#">Title 4</a></h1>
+        <p>Description 4</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/5.jpg" class="thumb">
+        <h1><a href="#">Title 5</a></h1>
+        <p>Description 5</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/6.jpg" class="thumb">
+        <h1><a href="#">Title 6</a></h1>
+        <p>Description 6</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/7.jpg" class="thumb">
+        <h1><a href="#">Title 7</a></h1>
+        <p>Description 7</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/8.jpg" class="thumb">
+        <h1><a href="#">Title 8</a></h1>
+        <p>Description 8</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/9.jpg" class="thumb">
+        <h1><a href="#">Title 9</a></h1>
+        <p>Description 9</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/10.jpg" class="thumb">
+        <h1><a href="#">Title 10</a></h1>
+        <p>Description 10</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/11.jpg" class="thumb">
+        <h1><a href="#">Title 11</a></h1>
+        <p>Description 11</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/12.jpg" class="thumb">
+        <h1><a href="#">Title 12</a></h1>
+        <p>Description 12</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/13.jpg" class="thumb">
+        <h1><a href="#">Title 13</a></h1>
+        <p>Description 13</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/14.jpg" class="thumb">
+        <h1><a href="#">Title 14</a></h1>
+        <p>Description 14</p>
+    </article>
+    <article class="white-panel">
+        <img src="assets/images/15.jpg" class="thumb">
+        <h1><a href="#">Title 15</a></h1>
+        <p>Description 15</p>
+    </article>
+</section>
+
+
+
+<script src="assets/js/jquery-1.11.0.min.js"></script>
+<script src="assets/js/pinterest_grid.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#gallery-wrapper").pinterest_grid({
+            no_columns: 4,
+            padding_x: 10,
+            padding_y: 10,
+            margin_bottom: 50,
+            single_column_breakpoint: 700
+        });
+
+    });
+</script>
+</body>
+</html>
